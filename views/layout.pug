@@ -1,0 +1,54 @@
+doctype html
+html
+  head
+    title News Portal
+    link(rel='stylesheet' href='/bower_components/bootstrap/dist/css/bootstrap.css') 
+    link(rel='stylesheet' href='/css/style.css')
+    meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+  body
+
+    nav.navbar.navbar-expand-lg.navbar-dark.bg-dark
+      a.navbar-brand(href='/') News Portal
+      button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarNav', aria-controls='navbarNav', aria-expanded='false', aria-label='Toggle navigation')
+        span.navbar-toggler-icon
+          span
+      #navbarNav.collapse.navbar-collapse
+          ul.navbar-nav.mr-auto
+            li.nav-item
+              a.nav-link(href='/')
+                  | Home 
+                  span.sr-only (current) 
+            if user
+                li.nav-item
+                  a.nav-link(href='/articles/add') Add Articles
+                li.nav-item
+                  a.nav-link(href='/athletes/add') Add Athlete    
+                    
+          ul.nav.navbar-nav.navbar-right
+            if user
+              li 
+                a.nav-link(href='/users/logout') Logout
+            else  
+                      
+              li
+                a.nav-link(href='/users/register') Register
+              li
+                a.nav-link(href='/users/login') Login
+            
+          form.form-inline
+              input.form-control.mr-sm-2(type='text', placeholder='Search', aria-label='Search')
+              button.btn.btn-outline-success.my-2.my-sm-0(type='submit') Search
+              
+    .container
+      != messages('message', locals)
+      if errors
+        each error, i in errors
+          div(class="alert alert-danger") #{error.msg }
+      block content
+      br
+      hr
+      footer
+        p Copyright &copy; 2017
+    script(src='/bower_components/jquery/dist/jquery.js')
+    script(src='/bower_components/bootstrap/dist/js/bootstrap.js')
+    script(src='/js/main.js')
