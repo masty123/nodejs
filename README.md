@@ -8,10 +8,10 @@
 
 #### These are the screenshots
 
-![GUI](img/preview1.PNG)
-![GUI](img/preview2.PNG)
-![GUI](img/preview3.PNG)
-![GUI](img/preview4.PNG)
-![GUI](img/preview5.PNG)
-![GUI](img/preview6.PNG)
-![GUI](img/preview7.PNG)
+![GUI](img/preview1.png)
+![GUI](img/preview2.png)
+![GUI](img/preview3.png)
+![GUI](img/preview4.png)
+![GUI](img/preview5.png)
+![GUI](img/preview6.png)
+![GUI](img/preview7.png)
