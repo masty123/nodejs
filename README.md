@@ -1,4 +1,4 @@
-# Article Website with Nodejs, Mongoose and stuff
+# Assignment 08: Article/Athlete Website with Nodejs, Mongoose, Pug, Expressjs and stuff
 
 ### This repository is all about learning how to build a website with Nodejs, Mongoose javascript etc.
 
